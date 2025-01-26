@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUV</title>
+    <style>
+.navbar {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content-section {
+            display: none; /* Hide all sections by default */
+        }
+
+        input[type="radio"] {
+            display: none; /* Hide the radio buttons */
+        }
+
+        input[type="radio"]:checked + .content-section {
+            display: block; /* Show the section when its radio button is selected */
+        }
+
+        label {
+            padding: 10px 20px;
+            background-color: #050506;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin:auto
+        }
+
+        label:hover {
+            background-color: #8e8d8c;
+        }
+    </style>
+</head>
+<body style="background-color:brown">
+    <h1 style="color:brown;Background-color:black;border-radius: 30px;text-align:center">Welcome To Navrachna University</h1>
+         <div class="navbar">
+        <label for="home">Home</label>
+        <label for="about">About Us</label>
+        <label for="Course">Course</label>
+        <label for="Admission Process">Admission Process</label>
+        <label for="Contact Us">Contact Us</label>
+    </div>
+
+      <!-- Radio buttons for toggling -->
+      <input type="radio" id="home" name="content-toggle" checked>
+      <div class="content-section">
+          <h1>Welcome to the Home Page</h1>
+          <p>This is the home section. You can include any information here.</p>
+      </div>
+  
+      <input type="radio" id="about" name="content-toggle">
+      <div class="content-section">
+          <h1>About Us</h1>
+          <p>This is the about us section. Share information about your website or organization here.</p>
+      </div>
+
+      <input type="radio" id="Course" name="content-toggle">
+      <div class="content-section">
+          <h1>Course</h1>
+          <p>This is the Course section. chose what you have to chose</p>
+      </div>
+
+      <input type="radio" id="Admission Process" name="content-toggle">
+      <div class="content-section">
+        <h1>This section is for admission process</h1>
+        <p>This is for your admission process..</p>
+      </div>
+
+      <input type="radio" id="Contact Us" name="content-toggle">
+      <div class="content-section">
+        <h1>This section Is for Contact Us ...</h1>
+        <p>Email: nuv@gamil.com</p>
+      </div>
+
+      <div class="main">
+        <label for="Apply Now">Apply Now</label>
+    </div>
+
+    <input type="radio" id="Apply Now" name="content-toggle">
+    <div class="content-section">
+      <h1>Application Form</h1>
+      <div class="name">
+        Name :
+        <input type="text" id="Name" required>
+      </div>
+
+      <div class="Email">Email Addres :
+        <input type="text" id="Email Addres :" required>
+      </div>
+
+      <div class="Contact">Contact :
+        <input type="text" id="Contact :" required>
+      </div>
+      <button>Submit</button>
+      <h2> Now further Process Will Be send your Email and We Will Contact You .</h2>
+    </div>
+</html>
